@@ -43,7 +43,7 @@ const App = () => {
         {filteredCountries.map((country) => (
           <div key={country.cca3} className="countryCard" style={{ margin: '10px', border: '1px solid #ccc', padding: '10px', width: '200px', height:"180px" }}>
             <img src={country.flags.svg} alt={`Flag of ${country.name.common}`} className="flag-img" style={{ width: '100%' }} />
-            <h3 className="country-name">{country.name.common}</h3>
+            <h2 className="country-name">{country.name.common}</h2>
           </div>
         ))}
       </div>
